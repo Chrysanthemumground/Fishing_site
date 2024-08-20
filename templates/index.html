@@ -1,0 +1,53 @@
+<html lang="ja">
+<head>
+    <title>Index</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1>釣り人日記</h1>
+    <form action="/calc" method="POST">
+        <p>
+            <label><span>現在の気温</span>
+                <input type="text" name="temperture" placeholder="気温">
+            </label>
+        </p>
+        <p>
+            <label><span>風の強さ</span>
+                <input type="text" name="wing" placeholder='風速'>
+            </label>
+        </p>
+        <p>
+            <label><span>風向</span>
+                <input type="text" name="huko" placeholder='風向'>
+            </label>
+        </p>
+        <p>
+            <label><span>時間</span>
+                <input type="text" name="time" placeholder='時刻'>
+            </label>
+        </p>
+        <p>
+            <label><span>気圧</span>
+                <input type="text" name="kiatu" placeholder='気圧'>
+            </label>
+        </p>
+        <p>
+            <label><span>潮の高さ</span>
+                <input type="text" name="shio" placeholder='気圧'>
+            </label>
+        </p>
+        <p>
+            <label><span>潮</span>
+                <input type="text" name="shioshio" placeholder='気圧'>
+            </label>
+        </p>
+
+
+        <div class="calc_btn">
+            <input type="submit" value='計算する'>
+        </div>
+    </form>
+    <h1>計算結果は{{result}}</h1>
+    
+</body>
+</html>
